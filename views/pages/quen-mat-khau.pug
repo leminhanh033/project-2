@@ -1,0 +1,17 @@
+extends ../layout/page-layout.pug
+block title
+  title Quên mật khẩu
+
+block main
+  .page-layout
+    .inner-wrap 
+      div.inner-title Quên mật khẩu
+      div.inner-content Vui lòng nhập email để tiếp tục
+      .inner-block 
+        .inner-item
+          label(for="email") Email
+          input(type="email", id="email", placeholder="Ví dụ: levana@gmail.com")
+        button Gửi mã OTP
+        .create 
+          span Bạn đã nhớ mật khẩu?   
+          a(href="#") Đăng nhập

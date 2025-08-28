@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family:  "Nunito Sans", sans-serif;
+    box-sizing: border-box;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+/* page-layout */
+.page-layout{
+    background-image:url(image/background.png);
+    min-height:100vh;
+    padding:50px 0;
+}
+.page-layout .inner-wrap{
+    margin-left:auto;
+    margin-right:auto;
+    width:630px;
+    padding:90px 57px;
+    border-radius:24px;
+    border: 0.3px solid #B9B9B9;
+    background-color: white;
+}
+.page-layout .inner-title{
+    font-weight:700;
+    font-size:32px;
+    color:#202224;
+    text-align: center;
+}
+.page-layout .inner-content{
+    font-weight:600;
+    font-size:18px;
+    color:#202224;
+    text-align: center;
+    margin-top:15px;
+}
+.page-layout .inner-block{
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+.page-layout .inner-block .inner-item{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.page-layout .inner-block .inner-item label{
+    font-weight:600;
+    font-size:18px;
+    color:#202224;
+}
+.page-layout .inner-block .inner-item input{
+    height:56px;
+    background-color: #F1F4F9;
+    border-radius: 8px;
+    border: 1px solid #D8D8D8;
+    padding:0 16px;
+}
+.page-layout .inner-block .inner-item input::placeholder{
+    font-weight:600;
+    font-size:18px;
+    color:#A6A6A6;
+}
+.page-layout .inner-line {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-layout .inner-line .remember-password{
+    display:flex;
+    gap:12px;
+    align-items: center;
+}
+.page-layout .inner-line .checkbox-wrapper-23{
+    width:24px;
+    height:24px;
+}
+.page-layout .inner-line .remember-password span,.page-layout .inner-line .forget-password a {
+    font-weight:600;
+    font-size:18px;
+    color:#202224;
+}
+.page-layout button{
+    background-color: #4880FF;
+    height:56px;
+    border-radius:8px;
+    border:0;
+    opacity: 0.9;
+    font-weight :700px;
+    font-size:20px;
+    color:white;
+}
+.page-layout button:hover{
+    opacity:1;
+    cursor: pointer;
+}
+.page-layout .create{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+.page-layout .create span{
+    font-weight:600;
+    font-size:18px;
+    color:#202224;
+}
+.page-layout .create a{
+    font-weight:600;
+    font-size:18px;
+    color:#5A8CFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* responsive */
+@media(max-width:991.98px){
+    .page-layout .inner-wrap{
+        padding:50px
+    }
+    .page-layout .inner-title{
+        font-size:28px;
+    }
+    .page-layout .inner-block{
+        gap:16px;
+        margin-top:20px;
+    }
+    .page-layout .inner-content,.page-layout .inner-block .inner-item label{
+        font-size:16px;
+    }
+    .page-layout .inner-line{
+        flex-wrap: wrap;
+        gap:12px;
+    }
+   .page-layout .inner-line .remember-password span,.page-layout .inner-line .forget-password a {
+    font-size:16px;
+    }
+   .page-layout button{
+    font-size:18px;
+    }
+   .page-layout .create{
+        flex-wrap: wrap;
+        gap:12px;
+   }
+}
+@media(max-width:767.98px){
+    .page-layout{
+        padding:50px;
+    }
+    .page-layout .inner-wrap{
+        width:100%;
+    }
+}
+/* end page-layout */
