@@ -3,7 +3,6 @@
   .checkbox-wrapper-23 *:before {
     box-sizing: border-box;
   }
-
   .checkbox-wrapper-23 input {
     position: absolute;
     opacity: 0;
@@ -19,7 +18,7 @@
 
   .checkbox-wrapper-23 input + label {
     display: block;
-    border: 2px solid #333;
+    border: 0.6px solid #A3A3A3;
     width: var(--size);
     height: var(--size);
     border-radius: 6px;
