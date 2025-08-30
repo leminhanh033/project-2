@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block title
+    link(rel="stylesheet", href="assets/style.css")
+    link(rel="stylesheet", href="assets/check-box.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css")
+  body 
+    .header 
+        .inner-logo 
+            .menu 
+                i.fa-solid.fa-bars
+            .logo-content 
+                span 28
+                span Admin
+        .inner-inform 
+            .inner-icon 
+                img(src="assets/image/bell.svg", alt="")
+                span 6
+            .inner-admin 
+                img(src="assets/image/avatar.png", alt="")
+                div 
+                    div Le Van A
+                    div Admin
+    .body
+        .sider         
+            a.action(href="#") 
+                i.fa-solid.fa-gauge-high
+                div Tổng quan
+            a(href="#") 
+                i.fa-solid.fa-table-cells-large
+                div Quản lý danh mục
+            a(href="#") 
+                i.fa-solid.fa-table-list
+                div Quản lý tour
+            a(href="#") 
+                i.fa-solid.fa-list-check
+                div Quản lý đơn hàng
+            a(href="#") 
+                i.fa-regular.fa-user
+                div Quản lý người dùng
+            a(href="#") 
+                i.fa-solid.fa-user-group
+                div Thông tin liên hệ
+            hr 
+            a(href="#") 
+                i.fa-solid.fa-gear
+                div Cài đặt chung
+            a(href="#") 
+                i.fa-regular.fa-user
+                div Thông tin cá nhân
+            a(href="#") 
+                i.fa-solid.fa-power-off
+                div Đăng xuất
+        block main
