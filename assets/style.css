@@ -696,6 +696,9 @@ a{
     font-weight:700;
     font-size:14px;
     color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .content .section-5 button:hover{
     background-color: rgba(72, 127, 255, 1);
@@ -722,14 +725,14 @@ a{
 .table-1 thead tr{
     border-bottom: 0.6px solid #D5D5D5
 }
-.table-1 thead tr th:first-child{
+.table-1 thead tr .check-box{
     border-top-left-radius: 14px;
     padding-left:32px;
 }
-.table-1 thead tr th:nth-child(6),.table-1 thead tr th:nth-child(7){
+.table-1 thead tr .tao-boi,.table-1 thead tr .update{
     text-align:left;
 }
-.table-1 thead tr th:last-child{
+.table-1 thead tr .action{
     border-top-right-radius: 14px;
     text-align: left;
 }
@@ -741,7 +744,7 @@ a{
 .table-1 tbody{
     background-color: #FFFFFF;
 }
-.table-1 tbody tr td:first-child .checkbox-wrapper-23{
+.table-1 tbody tr .check-box .checkbox-wrapper-23{
    padding-left:32px;
 }
 .table-1 tbody tr td{
@@ -750,16 +753,16 @@ a{
     padding-top:8px;
     border-bottom: 0.4px solid rgba(151, 151, 151, 0.6);
 }
-.table-1 tbody tr td:nth-child(2) div{
+.table-1 tbody tr .danh-muc div{
     font-weight:600;
     font-size:14px;
     color:var(--color);
 }
-.table-1 tbody tr td:nth-child(3) img{
+.table-1 tbody tr .anh-dai-dien img{
     width:60px;
     aspect-ratio: 1/1;
 }
-.table-1 tbody tr td:nth-child(4) div{
+.table-1 tbody tr .position div{
     font-weight:600;
     font-size:14px;
     color:var(--color);
@@ -782,15 +785,15 @@ a{
     font-weight:700;
     font-size:12px;
 }
-.table-1 tbody tr td:nth-child(6) div, .table-1 tbody tr td:nth-child(7) div{
+.table-1 tbody tr .tao-boi div, .table-1 tbody tr .update div{
     text-align: left;
     font-weight:600;
     font-size:14px;
 }
-.table-1 tbody tr td:nth-child(6) div:nth-child(2), .table-1 tbody tr td:nth-child(7) div:nth-child(2){
+.table-1 tbody tr .tao-boi div:nth-child(2), .table-1 tbody tr .update div:nth-child(2){
     font-size:12px;
 }
-.table-1 tbody tr td:nth-child(8) .inner-list{
+.table-1 tbody tr .action .inner-list{
     text-align: left;
     display:flex;
     background-color: #FAFBFD;
@@ -799,13 +802,13 @@ a{
     justify-content: space-between;
     width:96px;
 }
-.table-1 tbody tr td:nth-child(8) .inner-list div:nth-child(1){
+.table-1 tbody tr .action .inner-list div:nth-child(1){
     height:100%;
     font-size:15px;
     border-right: 0.4px solid #979797;
     padding:8.5px 8.5px 8.5px 16.5px;
 }
-.table-1 tbody tr td:nth-child(8) .inner-list div:nth-child(2){
+.table-1 tbody tr .action .inner-list div:nth-child(2){
     height:100%;
     font-size:15px;
     padding:8.5px 16.5px 8.5px 8.5px;
@@ -837,3 +840,31 @@ a{
     outline: none;
 }
 /* end section-6 */
+
+/* quan-ly-tour */
+.content .section-5 .inner-trash{
+    height:70px;
+    border-radius:14px;
+    padding:25px 30px;
+    background-color: #EF382633;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .section-5 .inner-trash a{
+    color:#EF3826;
+    opacity:90%;
+    font-weight:700;
+    font-size:14px;
+}
+    /* quan-ly-tour table-1 */
+.table-1 thead tr .price, .table-1 thead tr .remain{
+    text-align: left;
+}
+.table-1 tbody tr .price, .table-1 tbody tr .remain{
+    text-align: left;
+    font-weight:600;
+    font-size:14px;
+    color:rgba(32, 34, 36, 0.9);
+}
+/* end quan-ly-tour */
