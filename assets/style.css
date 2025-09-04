@@ -960,3 +960,21 @@ a{
     border-radius: 6px;
 }
 /* end quan-ly-nguoi-dung */
+
+/* thong-tin-lien-he */
+.table-1 tbody tr .date-create div{
+    font-weight:600;
+    font-size:14px;
+    color:var(--color)
+}
+.table-thong-tin-lh tbody tr .action{
+    text-align: left;
+}
+.table-thong-tin-lh tbody tr .action .inner-list{
+    border-radius:8px;
+}
+.table-thong-tin-lh tbody tr .action .inner-list div:first-child{
+    padding:9px 16px;
+    border-right:0;
+}
+/* end thong-tin-lien-he */
