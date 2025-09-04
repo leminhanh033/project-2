@@ -1,11 +1,11 @@
 extends ../layout/tong-quan-layout.pug
 
 block title
-    title Quản lý danh mục
+    title Quản lý người dùng
 
 block main
     .content
-        .inner-title Quản lý danh mục
+        .inner-title Quản lý người dùng
         .section-4 
             .inner-filter.inner-border 
                 img(src="assets/image/Filter-icon.svg", alt="") 
@@ -13,9 +13,6 @@ block main
             .inner-item.inner-border 
                 select 
                     option Trạng thái
-            .inner-item.inner-border 
-                select 
-                    option Người tạo
             .inner-date.inner-border 
                 input(type="date")
                 div -
@@ -27,13 +24,12 @@ block main
             .inner-action 
                 select 
                     option -- Hành động --
-                    option Hành động 
+                    option Hành động
                 div Áp dụng
             .inner-search 
                 i.fa-solid.fa-magnifying-glass
                 input(type="text" placeholder="Tìm kiếm")
-            button + Tạo mới
-        .table-1 
+        .table-1.table-ql-nguoi-dung
             table 
                 thead 
                     tr 
@@ -46,18 +42,18 @@ block main
                                     )
                                     svg(viewBox="0,0,50,50")
                                         path(d="M5 30 L 20 45 L 45 5")
-                        th.ten-danh-muc 
-                            div Tên danh mục
+                        th.full-name 
+                            div Họ tên
                         th.anh-dai-dien
                             div Ảnh đại diện
-                        th.position
-                            div Vị trí
+                        th.email
+                            div Email
+                        th.phone
+                            div Số điện thoại
+                        th.address
+                            div Địa chỉ
                         th.state
                             div Trạng thái
-                        th.tao-boi
-                            div Tạo bởi
-                        th.update
-                            div Cập nhật bởi
                         th.action
                             div Hành động
                 tbody 
@@ -71,20 +67,18 @@ block main
                                     )
                                     svg(viewBox="0,0,50,50")
                                         path(d="M5 30 L 20 45 L 45 5")
-                        td.danh-muc
-                            div Danh mục 1
-                        td.anh-dai-dien 
-                            img(src="assets/image/halong.png", alt="") 
-                        td.position
-                            div 1
-                        td.status
+                        td.full-name 
+                            div Lê Văn A
+                        td.anh-dai-dien
+                            img(src="assets/image/avatar.png", alt="")
+                        td.email
+                            div levana@gmail.com
+                        td.phone
+                            div 01234567890
+                        td.address
+                            div Số 123, đường ABC,...
+                        td.state
                             .working Hoạt động
-                        td.tao-boi
-                            div Lê Văn A
-                            div 16:30 - 20/10/2024
-                        td.update
-                            div Lê Văn A
-                            div 16:30 - 20/10/2024
                         td.action
                             .inner-list 
                                 div 
@@ -101,56 +95,25 @@ block main
                                     )
                                     svg(viewBox="0,0,50,50")
                                         path(d="M5 30 L 20 45 L 45 5")
-                        td.danh-muc
-                            div Danh mục 1
-                        td.anh-dai-dien 
-                            img(src="assets/image/halong.png", alt="") 
-                        td.position
-                            div 1
-                        td.status
+                        td.full-name 
+                            div Lê Văn A
+                        td.anh-dai-dien
+                            img(src="assets/image/avatar.png", alt="")
+                        td.email
+                            div levana@gmail.com
+                        td.phone
+                            div 01234567890
+                        td.address
+                            div Số 123, đường ABC,...
+                        td.state
                             .pause Tạm dừng
-                        td.tao-boi
-                            div Lê Văn A
-                            div 16:30 - 20/10/2024
-                        td.update
-                            div Lê Văn A
-                            div 16:30 - 20/10/2024
                         td.action
                             .inner-list 
                                 div 
                                     i.fa-solid.fa-pen-to-square
                                 div 
                                     i.fa-solid.fa-trash-can
-                    tr 
-                        td.check-box
-                            .checkbox-wrapper-23
-                                input#check-23-4(type="checkbox")
-                                label(
-                                    style="--size: 20px" 
-                                    for="check-23-4"
-                                    )
-                                    svg(viewBox="0,0,50,50")
-                                        path(d="M5 30 L 20 45 L 45 5")
-                        td.danh-muc
-                            div Danh mục 1
-                        td.anh-dai-dien 
-                            img(src="assets/image/halong.png", alt="") 
-                        td.position
-                            div 1
-                        td.status
-                            .working Hoạt động
-                        td.tao-boi
-                            div Lê Văn A
-                            div 16:30 - 20/10/2024
-                        td.update
-                            div Lê Văn A
-                            div 16:30 - 20/10/2024
-                        td.action
-                            .inner-list 
-                                div 
-                                    i.fa-solid.fa-pen-to-square
-                                div 
-                                    i.fa-solid.fa-trash-can
+
         .section-6 
             div Hiển thị 1 - 9 của 78
             select 

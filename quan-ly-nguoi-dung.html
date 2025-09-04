@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý danh mục</title>
+    <title>Quản lý người dùng</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/check-box.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
@@ -38,7 +38,7 @@
           <div>Đăng xuất</div></a>
       </div>
       <div class="content">
-        <div class="inner-title">Quản lý danh mục</div>
+        <div class="inner-title">Quản lý người dùng</div>
         <div class="section-4"> 
           <div class="inner-filter inner-border"> <img src="assets/image/Filter-icon.svg" alt="">
             <div>Bộ lọc</div>
@@ -46,11 +46,6 @@
           <div class="inner-item inner-border"> 
             <select> 
               <option>Trạng thái</option>
-            </select>
-          </div>
-          <div class="inner-item inner-border"> 
-            <select> 
-              <option>Người tạo</option>
             </select>
           </div>
           <div class="inner-date inner-border"> 
@@ -66,16 +61,15 @@
           <div class="inner-action"> 
             <select> 
               <option>-- Hành động --</option>
-              <option>Hành động </option>
+              <option>Hành động</option>
             </select>
             <div>Áp dụng</div>
           </div>
           <div class="inner-search"> <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Tìm kiếm">
           </div>
-          <button>+ Tạo mới</button>
         </div>
-        <div class="table-1"> 
+        <div class="table-1 table-ql-nguoi-dung">
           <table> 
             <thead> 
               <tr> 
@@ -89,23 +83,23 @@
                     </label>
                   </div>
                 </th>
-                <th class="ten-danh-muc"> 
-                  <div>Tên danh mục</div>
+                <th class="full-name"> 
+                  <div>Họ tên</div>
                 </th>
                 <th class="anh-dai-dien">
                   <div>Ảnh đại diện</div>
                 </th>
-                <th class="position">
-                  <div>Vị trí</div>
+                <th class="email">
+                  <div>Email</div>
+                </th>
+                <th class="phone">
+                  <div>Số điện thoại</div>
+                </th>
+                <th class="address">
+                  <div>Địa chỉ</div>
                 </th>
                 <th class="state">
                   <div>Trạng thái</div>
-                </th>
-                <th class="tao-boi">
-                  <div>Tạo bởi</div>
-                </th>
-                <th class="update">
-                  <div>Cập nhật bởi</div>
                 </th>
                 <th class="action">
                   <div>Hành động</div>
@@ -124,23 +118,21 @@
                     </label>
                   </div>
                 </td>
-                <td class="danh-muc">
-                  <div>Danh mục 1</div>
+                <td class="full-name"> 
+                  <div>Lê Văn A</div>
                 </td>
-                <td class="anh-dai-dien"> <img src="assets/image/halong.png" alt=""></td>
-                <td class="position">
-                  <div>1</div>
+                <td class="anh-dai-dien"><img src="assets/image/avatar.png" alt=""></td>
+                <td class="email">
+                  <div>levana@gmail.com</div>
                 </td>
-                <td class="status">
+                <td class="phone">
+                  <div>01234567890</div>
+                </td>
+                <td class="address">
+                  <div>Số 123, đường ABC,...</div>
+                </td>
+                <td class="state">
                   <div class="working">Hoạt động</div>
-                </td>
-                <td class="tao-boi">
-                  <div>Lê Văn A</div>
-                  <div>16:30 - 20/10/2024</div>
-                </td>
-                <td class="update">
-                  <div>Lê Văn A</div>
-                  <div>16:30 - 20/10/2024</div>
                 </td>
                 <td class="action">
                   <div class="inner-list"> 
@@ -160,59 +152,21 @@
                     </label>
                   </div>
                 </td>
-                <td class="danh-muc">
-                  <div>Danh mục 1</div>
+                <td class="full-name"> 
+                  <div>Lê Văn A</div>
                 </td>
-                <td class="anh-dai-dien"> <img src="assets/image/halong.png" alt=""></td>
-                <td class="position">
-                  <div>1</div>
+                <td class="anh-dai-dien"><img src="assets/image/avatar.png" alt=""></td>
+                <td class="email">
+                  <div>levana@gmail.com</div>
                 </td>
-                <td class="status">
+                <td class="phone">
+                  <div>01234567890</div>
+                </td>
+                <td class="address">
+                  <div>Số 123, đường ABC,...</div>
+                </td>
+                <td class="state">
                   <div class="pause">Tạm dừng</div>
-                </td>
-                <td class="tao-boi">
-                  <div>Lê Văn A</div>
-                  <div>16:30 - 20/10/2024</div>
-                </td>
-                <td class="update">
-                  <div>Lê Văn A</div>
-                  <div>16:30 - 20/10/2024</div>
-                </td>
-                <td class="action">
-                  <div class="inner-list"> 
-                    <div> <i class="fa-solid fa-pen-to-square"></i></div>
-                    <div> <i class="fa-solid fa-trash-can"></i></div>
-                  </div>
-                </td>
-              </tr>
-              <tr> 
-                <td class="check-box">
-                  <div class="checkbox-wrapper-23">
-                    <input id="check-23-4" type="checkbox">
-                    <label style="--size: 20px" for="check-23-4">
-                      <svg viewBox="0,0,50,50">
-                        <path d="M5 30 L 20 45 L 45 5"></path>
-                      </svg>
-                    </label>
-                  </div>
-                </td>
-                <td class="danh-muc">
-                  <div>Danh mục 1</div>
-                </td>
-                <td class="anh-dai-dien"> <img src="assets/image/halong.png" alt=""></td>
-                <td class="position">
-                  <div>1</div>
-                </td>
-                <td class="status">
-                  <div class="working">Hoạt động</div>
-                </td>
-                <td class="tao-boi">
-                  <div>Lê Văn A</div>
-                  <div>16:30 - 20/10/2024</div>
-                </td>
-                <td class="update">
-                  <div>Lê Văn A</div>
-                  <div>16:30 - 20/10/2024</div>
                 </td>
                 <td class="action">
                   <div class="inner-list"> 

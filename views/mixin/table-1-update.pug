@@ -1,4 +1,4 @@
-mixin table-1(icon)
+mixin table-1(icon,title)
     .table-1
         table 
             thead 
@@ -12,8 +12,8 @@ mixin table-1(icon)
                                 )
                                 svg(viewBox="0,0,50,50")
                                     path(d="M5 30 L 20 45 L 45 5")
-                    th.ten-danh-muc 
-                        div Tên danh mục
+                    th.name-tour 
+                        div Tên tour
                     th.anh-dai-dien
                         div Ảnh đại diện
                     th.price
@@ -27,7 +27,7 @@ mixin table-1(icon)
                     th.tao-boi
                         div Tạo bởi
                     th.update
-                        div Cập nhật bởi
+                        div #{title}
                     th.action
                         div Hành động
             tbody 
@@ -41,8 +41,8 @@ mixin table-1(icon)
                                 )
                                 svg(viewBox="0,0,50,50")
                                     path(d="M5 30 L 20 45 L 45 5")
-                    td.danh-muc
-                        div Danh mục 1
+                    td.name-tour
+                        div Tour Hạ Long
                     td.anh-dai-dien 
                         img(src="assets/image/halong.png", alt="") 
                     td.price 
@@ -79,8 +79,8 @@ mixin table-1(icon)
                                 )
                                 svg(viewBox="0,0,50,50")
                                     path(d="M5 30 L 20 45 L 45 5")
-                    td.danh-muc
-                        div Danh mục 1
+                    td.name-tour
+                        div Tour Hạ Long
                     td.anh-dai-dien 
                         img(src="assets/image/halong.png", alt="") 
                     td.price 
@@ -117,8 +117,8 @@ mixin table-1(icon)
                                 )
                                 svg(viewBox="0,0,50,50")
                                     path(d="M5 30 L 20 45 L 45 5")
-                    td.danh-muc
-                        div Danh mục 1
+                    td.name-tour
+                        div Tour Hạ Long
                     td.anh-dai-dien 
                         img(src="assets/image/halong.png", alt="") 
                     td.price 
