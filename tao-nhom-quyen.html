@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo tour</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/check-box.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  </head>
+  <body> 
+    <div class="header"> 
+      <div class="inner-logo"> 
+        <div class="menu"> <i class="fa-solid fa-bars"></i></div>
+        <div class="logo-content"> <span>28</span><span>Admin</span></div>
+      </div>
+      <div class="inner-inform"> 
+        <div class="inner-icon"> <img src="assets/image/bell.svg" alt=""><span>6</span></div>
+        <div class="inner-admin"> <img src="assets/image/avatar.png" alt="">
+          <div> 
+            <div>Le Van A</div>
+            <div>Admin</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="sider"> 
+        <div class="list">      <a class="action" href="#"> <i class="fa-solid fa-gauge-high"></i>
+            <div>Tổng quan</div></a><a href="#"> <i class="fa-solid fa-table-cells-large"></i>
+            <div>Quản lý danh mục</div></a><a href="#"> <i class="fa-solid fa-table-list"></i>
+            <div>Quản lý tour</div></a><a href="#"> <i class="fa-solid fa-list-check"></i>
+            <div>Quản lý đơn hàng</div></a><a href="#"> <i class="fa-regular fa-user"></i>
+            <div>Quản lý người dùng</div></a><a href="#"> <i class="fa-solid fa-user-group"></i>
+            <div>Thông tin liên hệ</div></a>
+          <hr><a href="#"> <i class="fa-solid fa-gear"></i>
+            <div>Cài đặt chung</div></a><a href="#"> <i class="fa-regular fa-user"></i>
+            <div>Thông tin cá nhân</div></a><a href="#"> <i class="fa-solid fa-power-off"></i>
+            <div>Đăng xuất</div></a>
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <div class="content">
+        <div class="inner-title">Tạo tour</div>
+        <div class="section-8"> 
+          <div class="inner-group"> 
+            <label for="name">Tên nhóm quyền</label>
+            <input type="text" id="name">
+          </div>
+          <div class="inner-group"> 
+            <label for="short-des">Mô tả ngắn</label>
+            <input type="text" id="short-des">
+          </div>
+          <div class="inner-group destination"> 
+            <div>Phân quyền</div>
+            <div class="inner-destination">
+              <div class="inner-item">                    
+                                <div class="checkbox-wrapper-23">
+                                  <input type="checkbox" id="check-23-0">
+                                  <label style="--size: 20px;background-color: white" for="check-23-0">
+                                    <svg viewBox="0,0,50,50">
+                                      <path d="M5 30 L 20 45 L 45 5"></path>
+                                    </svg>
+                                  </label>
+                                </div><span>Xem trang Tổng quan</span>
+              </div>
+              <div class="inner-item">                    
+                                <div class="checkbox-wrapper-23">
+                                  <input type="checkbox" id="check-23-1">
+                                  <label style="--size: 20px;background-color: white" for="check-23-1">
+                                    <svg viewBox="0,0,50,50">
+                                      <path d="M5 30 L 20 45 L 45 5"></path>
+                                    </svg>
+                                  </label>
+                                </div><span>Xem danh mục</span>
+              </div>
+              <div class="inner-item">                    
+                                <div class="checkbox-wrapper-23">
+                                  <input type="checkbox" id="check-23-2">
+                                  <label style="--size: 20px;background-color: white" for="check-23-2">
+                                    <svg viewBox="0,0,50,50">
+                                      <path d="M5 30 L 20 45 L 45 5"></path>
+                                    </svg>
+                                  </label>
+                                </div><span>Tạo danh mục</span>
+              </div>
+              <div class="inner-item">                    
+                                <div class="checkbox-wrapper-23">
+                                  <input type="checkbox" id="check-23-3">
+                                  <label style="--size: 20px;background-color: white" for="check-23-3">
+                                    <svg viewBox="0,0,50,50">
+                                      <path d="M5 30 L 20 45 L 45 5"></path>
+                                    </svg>
+                                  </label>
+                                </div><span>Sửa danh mục</span>
+              </div>
+              <div class="inner-item">                    
+                                <div class="checkbox-wrapper-23">
+                                  <input type="checkbox" id="check-23-4">
+                                  <label style="--size: 20px;background-color: white" for="check-23-4">
+                                    <svg viewBox="0,0,50,50">
+                                      <path d="M5 30 L 20 45 L 45 5"></path>
+                                    </svg>
+                                  </label>
+                                </div><span>Xóa danh mục</span>
+              </div>
+            </div>
+          </div>
+          <div class="inner-group two-col">
+            <div class="button">
+              <button>Tạo mới</button>
+            </div>
+          </div>
+          <div class="inner-group two-col">
+            <div class="return"><a href="#">Quay lại danh sách</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
