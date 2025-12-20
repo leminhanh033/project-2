@@ -20,7 +20,14 @@ if(addbutton){
         let cloneitem=child.cloneNode(true);
         cloneitem.querySelector("input").value="";
         cloneitem.querySelector("textarea").value="";
+
+        const body=cloneitem.querySelector(".body");   
+        const id=`mce_${Date.now()}`;
+        body.innerHTML=`<textarea id=${id}></textarea>`;
+
         parent.appendChild(cloneitem);
+        initmce(`#${id}`);
+        
     })
 }
     

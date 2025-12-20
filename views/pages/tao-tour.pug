@@ -93,7 +93,7 @@ block main
             .inner-group.two-col 
                 div.des
                     label(for="des") Thông tin tour
-                    textarea#des(name="") 
+                    textarea#des(name="" textarea-mce) 
             .inner-list.two-col 
                 .inner-list-title Lịch trình tour
                 .inner-list-main 
@@ -107,7 +107,8 @@ block main
                                 img(src="assets/image/trash.svg", alt="")
                             div.square.button-hidden
                                 i.fa-solid.fa-angle-down
-                        textarea
+                        .body
+                            textarea(textarea-mce)
                 .inner-button.add-schedule
                     button + Thêm lich trình
             .inner-group.two-col
