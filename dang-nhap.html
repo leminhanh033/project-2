@@ -13,14 +13,14 @@
       <div class="inner-wrap"> 
         <div class="inner-title">Đăng nhập</div>
         <div class="inner-content">Vui lòng nhập email và mật khẩu để tiếp tục</div>
-        <div class="inner-block"> 
+        <form class="inner-block" id="email-login-form"> 
           <div class="inner-item">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Ví dụ: levana@gmail.com">
+            <label for="email-input">Email</label>
+            <input id="email-input" type="email" name="email" placeholder="Ví dụ: levana@gmail.com">
           </div>
           <div class="inner-item">
-            <label for="password">Mật khẩu</label>
-            <input class="pass" type="password" id="password">
+            <label for="password-input">Mật khẩu</label>
+            <input class="pass" id="password-input" type="password" name="password">
           </div>
           <div class="inner-line"> 
             <div class="remember-password"> 
@@ -37,9 +37,10 @@
           </div>
           <button>Đăng Nhập</button>
           <div class="create"> <span>Bạn chưa có tài khoản?   </span><a href="#">Tạo tài khoản</a></div>
-        </div>
+        </form>
       </div>
     </div>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

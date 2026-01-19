@@ -6,14 +6,13 @@ block title
 block main
     .content
         .inner-title Tạo tour
-        .section-8 
+        form#tourcreate.section-8 
             .inner-group 
-                label(for="name") Tên danh mục
-                input(type="text" id="name" )
+                label(for="tour") Tên tour *
+                input(type="text" id="tour")
             .inner-group 
-                label(for="parent") Danh mục cha
-                select#parent(name="") 
-                    option -- Chọn danh mục --
+                label(for="name") Danh mục
+                input(type="text" id="name" )            
             .inner-group 
                 label(for="position") Vị trí
                 input(type="number" id="position")
@@ -24,8 +23,8 @@ block main
             .inner-group.two-col 
                 div.avatar 
                     label(for="avatar") Ảnh đại diện
-                    div
-                        input(type="file")
+                    div.avartar-file
+                        input(type="file" id="avatar" filepond accept="image/*")
             .inner-group.price 
                 div Giá cũ
                 .inner-price 
@@ -99,7 +98,7 @@ block main
                 .inner-list-main 
                     .inner-schedule-item 
                         .inner-header 
-                            div.square
+                            div.square.handle
                                 img(src="assets/image/add.svg", alt="")
                             div.input
                                 input(type="text")

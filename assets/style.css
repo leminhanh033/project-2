@@ -72,19 +72,15 @@ a{
 }
 .page-layout .inner-line {
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.page-layout .inner-line .remember-password{
-    display:flex;
-    gap:12px;
     align-items: center;
 }
 .page-layout .inner-line .checkbox-wrapper-23{
-    width:24px;
-    height:24px;
+    display: flex;
+    align-items: center;
+    gap: 5px 10px;
+    flex-wrap: wrap;
 }
-.page-layout .inner-line .remember-password span,.page-layout .inner-line .forget-password a {
+.page-layout .inner-line span,.page-layout .inner-line .forget-password a {
     font-weight:600;
     font-size:18px;
     color:var(--color);
@@ -123,6 +119,13 @@ a{
     cursor: pointer;
 }
 
+.page-layout .checkbox-wrapper-23 .just-validate-error-label{
+    width:100%;
+    /* position:absolute;
+    left:0;
+    top:100%; */
+} 
+
 /* responsive */
 @media(max-width:991.98px){
     .page-layout .inner-wrap{
@@ -142,7 +145,7 @@ a{
         flex-wrap: wrap;
         gap:12px;
     }
-   .page-layout .inner-line .remember-password span,.page-layout .inner-line .forget-password a {
+   .page-layout .inner-line span,.page-layout .inner-line .forget-password a {
     font-size:16px;
     }
    .page-layout button{
@@ -474,6 +477,16 @@ a{
     background-color: #FCFDFD;
     border: 0.6px solid #D5D5D5;
     padding:5px;
+}
+.section-2 .graph{
+    height:273px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2 .graph .chart,.section-2 .graph .chart canvas{
+    width:100% !important;
+    height:100% !important;
 }
 /* responsive */
 @media(max-width:575.98px){
@@ -1055,7 +1068,7 @@ a{
     font-size:14px;
     color:#606060;
 }
-.section-8 .inner-group .avatar input{
+.section-8 .inner-group .avatar input, .section-8 .filepond--root{
     width:150px;
     height:150px;
 }
@@ -1170,6 +1183,9 @@ a{
 .section-8 .inner-list .inner-schedule-item.hiden .inner-header .button-hidden i::before{
     content:"\f106";
 }
+.section-8 .inner-list .inner-schedule-item.hiden .body{
+    display:none;
+}
 .section-8 .inner-list .inner-header img{
     width:18px;
     height:18px;
@@ -1221,6 +1237,36 @@ a{
     color:var(--color);
     cursor: pointer;
 }
+/* filepond */
+.section-8 .avatar .avartar-file{
+    height:150px;
+    display:flex;
+    align-items: center;
+}
+.filepond--root .filepond--credits{
+    display:none;
+}
+.section-8 .filepond--drop-label.filepond--drop-label label{
+    font-size: 36px;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.section-8 .filepond--root .filepond--drop-label{
+    height:150px;
+}
+.section-8 .filepond--root{
+    height:100% !important;
+    margin-bottom:0;
+}
+.section-8 .filepond--file{
+    width:100%;
+    height:100%;
+}
+/* end filepond */
 @media(max-width:575.98px){
     .section-8 .inner-list .inner-header .input{
         order:1;
@@ -1246,6 +1292,7 @@ a{
     display:flex;
     gap:12px;
     align-items: center;
+    flex-direction: row;
 }
 .section-8 .inner-list-tour .inner-item img{
     width:115px;

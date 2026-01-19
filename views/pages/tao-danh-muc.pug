@@ -6,7 +6,7 @@ block title
 block main
     .content
         .inner-title Tạo danh mục
-        .section-8 
+        form#tendanhmuc.section-8 
             .inner-group 
                 label(for="name") Tên danh mục
                 input(type="text" id="name" )
@@ -24,8 +24,8 @@ block main
             .inner-group.two-col 
                 div.avatar 
                     label(for="avatar") Ảnh đại diện
-                    div
-                        input(type="file")
+                    div.avartar-file
+                        input(type="file" id="avatar" filepond accept="image/*")
             .inner-group.two-col 
                 div.des
                     label(for="des") Mô tả

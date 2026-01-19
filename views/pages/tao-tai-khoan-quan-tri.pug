@@ -6,7 +6,7 @@ block title
 block main
     .content
         .inner-title Tạo tài khoản quản trị
-        .section-8 
+        form#admin-create.section-8 
             .inner-group 
                 label(for="name") Họ tên
                 input(type="text" id="name" )
@@ -34,8 +34,8 @@ block main
             .inner-group.two-col
                 div.avatar 
                     label(for="avatar") Ảnh đại diện
-                    div
-                        input(type="file" id="avatar")
+                    div.avartar-file
+                        input(type="file" id="avatar" filepond)
             
             .inner-group.two-col
                 div.button

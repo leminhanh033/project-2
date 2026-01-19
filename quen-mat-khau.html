@@ -14,15 +14,16 @@
         <div class="inner-title">Quên mật khẩu</div>
         <div class="inner-content">Vui lòng nhập email để tiếp tục</div>
         <div class="inner-block"> 
-          <div class="inner-item">
+          <form class="inner-item" id="forgetpassword">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Ví dụ: levana@gmail.com">
-          </div>
-          <button>Gửi mã OTP</button>
+            <input id="email-input" type="email" placeholder="Ví dụ: levana@gmail.com">
+          </form>
+          <button form="forgetpassword">Gửi mã OTP</button>
           <div class="create"> <span>Bạn đã nhớ mật khẩu?   </span><a href="#">Đăng nhập</a></div>
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

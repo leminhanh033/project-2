@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/check-box.css"><script src="https://cdn.tiny.cloud/1/5hr00uf3eftssqfxtikgqr5763xunkfp51zkvphdxgw7yhq7/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
     <script src="assets/js/tinymce.js">   </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
   </head>
   <body> 
     <div class="header"> 
@@ -43,32 +45,32 @@
       </div>
       <div class="content">
         <div class="inner-title">Thông tin cá nhân</div>
-        <div class="section-8"> 
+        <form class="section-8" id="individualinfor"> 
           <div class="inner-group"> 
-            <label for="name">Họ tên</label>
-            <input type="text" id="name">
+            <label for="name">Họ tên *</label>
+            <input type="text" id="name" name="name">
           </div>
           <div class="inner-group"> 
-            <label for="email">Email</label>
-            <input type="email" id="email">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email">
           </div>
           <div class="inner-group"> 
-            <label for="phone">Số điện thoại</label>
-            <input type="text" id="phone">
+            <label for="phone">Số điện thoại*</label>
+            <input type="text" id="phone" name="phone">
           </div>
           <div class="inner-group"> 
             <label for="chuc-vu">Chức vụ</label>
-            <input type="text" id="chuc-vu">
+            <input type="text" id="chuc-vu" name="chuc-vu">
           </div>
           <div class="inner-group"> 
-            <label for="nhom-quyen">Nhóm quyền</label>
-            <input type="text" id="nhom-quyen">
+            <label for="inner-nhom-quyen">Nhóm quyền</label>
+            <input type="text" id="inner-nhom-quyen" name="nhom-quyen">
           </div>
           <div class="inner-group two-col">
             <div class="avatar"> 
               <label for="avatar">Ảnh đại diện</label>
-              <div>
-                <input type="file" id="avatar">
+              <div class="avartar-file">
+                <input type="file" id="avatar" filepond accept="image/*">
               </div>
             </div>
           </div>
@@ -80,9 +82,14 @@
           <div class="inner-group two-col">
             <div class="return"><a href="#">Đổi mật khẩu</a></div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.6/Sortable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

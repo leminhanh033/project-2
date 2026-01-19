@@ -8,10 +8,10 @@ block main
       div.inner-title Quên mật khẩu
       div.inner-content Vui lòng nhập email để tiếp tục
       .inner-block 
-        .inner-item
+        form#forgetpassword.inner-item
           label(for="email") Email
-          input(type="email", id="email", placeholder="Ví dụ: levana@gmail.com")
-        button Gửi mã OTP
+          input#email-input(type="email", placeholder="Ví dụ: levana@gmail.com")
+        button(form="forgetpassword") Gửi mã OTP
         .create 
           span Bạn đã nhớ mật khẩu?   
           a(href="#") Đăng nhập

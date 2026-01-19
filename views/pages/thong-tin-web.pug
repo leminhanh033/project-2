@@ -6,7 +6,7 @@ block title
 block main
     .content
         .inner-title Thông tin website
-        .section-8 
+        form#website-infor.section-8 
             .inner-group 
                 label(for="name") Tên website
                 input(type="text" id="name" )
@@ -22,13 +22,13 @@ block main
             .inner-group 
                 div.avatar 
                     label(for="avatar") Ảnh đại diện
-                    div
-                        input(type="file" id="avatar")
+                    div.avartar-file
+                        input(type="file" id="avatar" filepond )
             .inner-group 
                 div.avatar 
                     label(for="avatar-1") Favicon
-                    div
-                        input(type="file" id="avatar")
+                    div.avartar-file
+                        input(type="file" id="avatar" filepond)
             .inner-group.two-col
                 div.button
                     button Cập nhật

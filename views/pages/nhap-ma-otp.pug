@@ -8,10 +8,10 @@ block main
       div.inner-title Nhập mã OTP
       div.inner-content Vui lòng nhập mã OTP để tiếp tục
       .inner-block 
-        .inner-item
+        form#otp-password.inner-item
           label(for="otp") Mã OTP
           input(type="text", id="otp", placeholder="Mã OTP")
-        button Xác thực
+        button(form="otp-password") Xác thực
         .create 
           span Bạn đã nhớ mật khẩu?   
           a(href="#") Đăng nhập

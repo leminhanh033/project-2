@@ -13,36 +13,36 @@
       <div class="inner-wrap"> 
         <div class="inner-title">Đăng ký</div>
         <div class="inner-content">Tạo một tài khoản để tiếp tục</div>
-        <div class="inner-block"> 
+        <form class="inner-block" id="register-form"> 
           <div class="inner-item">
             <label for="fullname">Họ tên</label>
             <input type="text" id="fullname" placeholder="Ví dụ: Lê Văn A">
           </div>
           <div class="inner-item">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Ví dụ: levana@gmail.com">
+            <input type="email" id="email-input" name="email" placeholder="Ví dụ: levana@gmail.com">
           </div>
           <div class="inner-item">
             <label for="password">Mật khẩu</label>
-            <input class="pass" type="password" id="password">
+            <input class="pass" type="password" id="password-input" name="password">
           </div>
-          <div class="inner-line"> 
-            <div class="remember-password"> 
-              <div class="checkbox-wrapper-23">
-                <input id="check-23" type="checkbox">
-                <label style="--size: 24px" for="check-23">
-                  <svg viewBox="0,0,50,50">
-                    <path d="M5 30 L 20 45 L 45 5"></path>
-                  </svg>
-                </label>
-              </div><span>Tôi chấp nhận các điều khoản và điều kiện</span>
+          <div class="inner-line">          
+            <div class="checkbox-wrapper-23">
+              <input id="check-23" type="checkbox">
+              <label style="--size: 24px" for="check-23">
+                <svg viewBox="0,0,50,50">
+                  <path d="M5 30 L 20 45 L 45 5"></path>
+                </svg>
+              </label>
+              <label for="check-23">Tôi chấp nhận các điều khoản và điều kiện</label>
             </div>
           </div>
           <button>Đăng Ký</button>
           <div class="create"> <span>Bạn đã có tài khoản?  </span><a href="#">Đăng nhập</a></div>
-        </div>
+        </form>
       </div>
     </div>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

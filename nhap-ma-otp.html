@@ -14,15 +14,16 @@
         <div class="inner-title">Nhập mã OTP</div>
         <div class="inner-content">Vui lòng nhập mã OTP để tiếp tục</div>
         <div class="inner-block"> 
-          <div class="inner-item">
+          <form class="inner-item" id="otp-password">
             <label for="otp">Mã OTP</label>
             <input type="text" id="otp" placeholder="Mã OTP">
-          </div>
-          <button>Xác thực</button>
+          </form>
+          <button form="otp-password">Xác thực</button>
           <div class="create"> <span>Bạn đã nhớ mật khẩu?   </span><a href="#">Đăng nhập</a></div>
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
